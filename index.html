@@ -86,8 +86,8 @@
 
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
+                    <button class="btn btn-default d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
                     </button>
 
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -125,26 +125,55 @@
                     </div>
                 </div>
             </nav>
+
             <div class="cosas container-fluid">
               <div class="row">
-                <div class="composicion col-sm-3">
+                <div class="composicion col-md-4">
                   <h3>Composicion</h3>
                   <div class="grafico_composicion">
-                      <canvas id="grafico_composicion" height="250"></canvas>
+                      <canvas id="grafico_composicion" height="150"></canvas>
                   </div>
                 </div>
-                <div class="tenencias col-sm-3">
-                  <h3>Mis Tenencias</h3>
+                <div class="tenencias col-md-4">
+                  <h3>Tenencias</h3>
                   <div class="grafico_tenencias">
-                    <canvas id="grafico_tenencias" height="250"></canvas>
+                    <canvas id="grafico_tenencias" height="150"></canvas>
                   </div>
                 </div>
-                <div class="ganancias_perdidas col-sm-6">
-                  <h3>Ganancias - Pérdidas</h3>
-                  <div class="grafico_ganancias_perdidas">
-
-                    <canvas id="grafico_ganancias_perdidas" height="100"></canvas>
-
+                <div class="oportunidades col-md-4">
+                  <h3>Oportunidades</h3>
+                  <div class="oportunidad">
+                    <table>
+                      <tr>
+                        <td>GGAL</td>
+                        <td>Grupo Financiero Galicia</td>
+                        <td id="porcentajeArriba">+3,89%</td>
+                        <td>$80,5</td>
+                        <td><i class="fas fa-chevron-right"></i></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="oportunidad">
+                    <table>
+                      <tr>
+                        <td>GGAL</td>
+                        <td>Grupo Financiero Galicia</td>
+                        <td id="porcentajeArriba">+3,89%</td>
+                        <td>$80,5</td>
+                        <td><i class="fas fa-chevron-right"></i></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="oportunidad">
+                    <table>
+                      <tr>
+                        <td>GGAL</td>
+                        <td>Grupo Financiero Galicia</td>
+                        <td id="porcentajeArriba">+3,89%</td>
+                        <td>$80,5</td>
+                        <td><i class="fas fa-chevron-right"></i></td>
+                      </tr>
+                    </table>
                   </div>
                 </div>
               </div>
@@ -152,7 +181,7 @@
               <div class="line"></div>
 
               <div class="row">
-                <div class="operaciones col-sm-6">
+                <div class="operaciones col-md-6">
                   <h3>Operaciones</h3>
                   <div class="table-responsive table table-borderless table-hover table-dark tabla_operaciones">
                     <table class="">
@@ -191,29 +220,13 @@
                     </table>
                   </div>
                 </div>
-                <div class="oportunidades col-sm-3">
-                  <h3>Oportunidades</h3>
-                  <div class="oportunidad">
-                    <table>
-                      <tr>
-                        <td>ALUA</td>
-                        <td id="porcentajeArriba">+3,89%</td>
-                        <td>$80,5</td>
-                        <td><canvas id="grafico_suba_precio1"></canvas></td>
-                        <td><i class="fas fa-chevron-right"></i></td>
-                      </tr>
-                    </table>
-                  </div>
-                  <div class="oportunidad">
-                    <table>
-                      <tr>
-                        <td>ALUA</td>
-                        <td id="porcentajeArriba">+3,89%</td>
-                        <td>$80,5</td>
-                        <td><canvas id="grafico_suba_precio2"></canvas></td>
-                        <td><i class="fas fa-chevron-right"></i></td>
-                      </tr>
-                    </table>
+
+                <div class="ganancias_perdidas col-md-6">
+                  <h3>Ganancias - Pérdidas</h3>
+                  <div class="grafico_ganancias_perdidas">
+
+                    <canvas id="grafico_ganancias_perdidas" height="100"></canvas>
+
                   </div>
                 </div>
               </div>

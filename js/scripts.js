@@ -7,15 +7,13 @@ $(document).ready(function () {
 var tenenciasCanvas = document.getElementById("grafico_tenencias");
 var composicionCanvas = document.getElementById("grafico_composicion");
 var gananciasPerdidasCanvas = document.getElementById("grafico_ganancias_perdidas");
-var subaPrecioCanvas1 = document.getElementById("grafico_suba_precio1");
-var subaPrecioCanvas2 = document.getElementById("grafico_suba_precio2");
 
 Chart.defaults.global.defaultFontFamily = "Poppins";
 Chart.defaults.global.defaultFontSize = 12;
 
 var options = {
       legend: {
-          position: 'bottom',
+          position: 'right',
           labels: {
               fontColor: "#f5f5f5",
               boxWidth: 20,
@@ -55,32 +53,6 @@ var lineChartOptions = {
           boxWidth: 20,
           padding: 10
       }
-  }
-}
-
-var subaPrecioOptions = {
-  legend: {
-  display: false
-  },
-  scales: {
-    yAxes: [{
-      gridLines: {
-        drawBorder: false,
-        display: false
-      },
-      ticks: {
-        fontColor: "#003749"
-      }
-    }],
-    xAxes: [{
-      gridLines: {
-        drawBorder: false,
-        display: false
-      },
-      ticks: {
-        fontColor: "#003749"
-      }
-    }]
   }
 }
 
@@ -144,17 +116,6 @@ var dataPerdidas = {
   borderColor: '#f44336'
 };
 
-var dataSubaPrecio = {
-  labels:["1", "1", "1", "1", "1", "1", "1", "1", "1", "1"],
-  datasets: [{
-          data: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18],
-          lineTension: 0,
-          fill: false,
-          borderColor: '#8bc34a'
-  }]
-
-};
-
 var dataGananciasPerdidas = {
   labels: ["1", "5", "10", "15", "20", "25", "30"],
   datasets: [dataGanancias, dataPerdidas]
@@ -164,16 +125,4 @@ var lineChart = new Chart(gananciasPerdidasCanvas, {
   type: 'line',
   data: dataGananciasPerdidas,
   options: lineChartOptions
-});
-
-var lineChart = new Chart(subaPrecioCanvas1, {
-  type: 'line',
-  data: dataSubaPrecio,
-  options: subaPrecioOptions
-});
-
-var lineChart = new Chart(subaPrecioCanvas2, {
-  type: 'line',
-  data: dataSubaPrecio,
-  options: subaPrecioOptions
 });
