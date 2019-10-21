@@ -151,6 +151,10 @@ span {
     display: none;
 }
 
+#sidebar.active .sidebar-header{
+  padding-bottom: 65px;
+}
+
 .sidebar-header h3, button {
   display: inline-block;
 }
