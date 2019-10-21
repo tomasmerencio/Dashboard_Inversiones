@@ -66,20 +66,25 @@ h2, h3 {
 
 .oportunidad{
   background-color: #003749;
-  padding: 20px;
+  padding: 15px;
   margin-top: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   border-radius: 10px;
+  height: 250px;
 }
 
 .oportunidad td{
-  padding-right: 20px;
+  padding-right: 10px;
   text-align: center;
-  vertical-align: center;
+  text-align: left;
 }
 
 #porcentajeArriba{
   color: #8bc34a;
+}
+
+#porcentajeAbajo{
+  color: #f44336;
 }
 
 .tabla_operaciones table{
