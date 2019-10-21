@@ -45,6 +45,10 @@ h2, h3 {
 }
 
 .navbar i {
+  color: #c9c9c9;
+}
+
+.navbar i:hover {
   color: #f5f5f5;
 }
 
@@ -92,7 +96,7 @@ h2, h3 {
   padding: 10px;
   text-align: center;
   vertical-align: center;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #DEDEDE;
 }
 
 input.transparent-input{
@@ -107,7 +111,7 @@ input.transparent-input{
 .line {
     width: 100%;
     height: 1px;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #DEDEDE;
     margin: 40px 0;
 }
 
@@ -162,6 +166,11 @@ span {
 .sidebar-header button{
   background-color: #003749;
   float: right;
+  color: #c9c9c9;
+}
+
+.sidebar-header button:hover{
+  color: #f5f5f5;
 }
 
 #sidebar.active .sidebar-header strong {
@@ -254,15 +263,18 @@ ul.CTAs {
 }
 
 ul.CTAs a {
-    text-align: center;
     font-size: 0.9em !important;
     display: block;
     border-top: 1px solid #f5f5f5;
 }
 
 a.download {
-    text-align: center;
-    color: #f5f5f5;
+    text-align: center !important;
+    color: #c9c9c9;
+}
+
+a.download:hover{
+  color: #f5f5f5;
 }
 
 /* ---------------------------------------------------
