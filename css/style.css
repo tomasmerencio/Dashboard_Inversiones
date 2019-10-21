@@ -155,6 +155,10 @@ span {
   display: inline-block;
 }
 
+.sidebar-header button{
+  background-color: #003749;
+}
+
 #sidebar.active .sidebar-header strong {
     display: block;
 }
