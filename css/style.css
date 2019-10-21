@@ -157,6 +157,7 @@ span {
 
 .sidebar-header button{
   background-color: #003749;
+  float: right;
 }
 
 #sidebar.active .sidebar-header strong {

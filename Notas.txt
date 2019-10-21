@@ -1,0 +1,43 @@
+Hola Ezequiel, como estas? 
+Perdón en la demora de la respuesta.
+
+Vas muy bien!!! Del carousel lo que te estaría faltando es que las imágenes también te tomen el alto de la pantalla. Igualmente te aclaro algunas cositas que vi:
+
+1) Los archivos CSS van linkeados en el head, pero los archivos de js, conviene linkearlos al final del archivo, antes del cierre de la etiqueta body. 
+
+2) Cuando linkeas las imágenes el ./ no es necesario. Si la imagen está en el mismo lugar que tu archivo html solo basta con poner el nombre de la imagen. Te dejo un link para aclararte un poco esto de las rutas: https://www.w3schools.com/html/html_filepaths.asp
+Por otro lado, tratá de organizar un poco la estructura de los archivos, te recomiendo que hagas una carpeta que sea css, otra que sea images y otra js y que los htmls te queden por fuera de las carpetas esas. Ahora porque tienen pocos archivos, pero en proyectos grandes tienen que tener el contenido bien organizado, es una buena práctica. 
+
+3) Fijate que estás usando una versión vieja de bootstrap, por eso el otro día en la clase no nos andaban las clases que poníamos de bootstrap 4!! Te recomiendo que linkees todo con el 4 que ya tiene varias clases que te solucionan cosas como lo de vh-100 para que tome el alto total de la pantalla, todo lo que es para centrar verticalmente, y varias cosas más.
+
+4) Una vez que hagas eso, deberías poner la clase vh-100 en los lugares que habías utilizado tu css propio que hacía lo mismo.
+
+5) Al carousel vas a tener que modificarlo por esta adaptación que te mando: https://jsfiddle.net/StartBootstrap/yezxdwv3/?utm_source=website&utm_medium=embed&utm_campaign=yezxdwv3
+Esto es porque al forzar que te ocupe el alto de la pantalla, si vos a la imagen le pones height: 100% y width: 100% vas a ver que estás deformando la imagen porque la forzas a que ocupe todo y no respetas las proporciones de la misma. En el ejemplo que te mando, la imagen la pone como background-image y junto con la propiedad background-size logra que ocupe (proporcionalmente) todo el espacio del contenido. Vas a ver que la imagen puede ir "comiendose" de los costados o de arriba y de abajo pero nunca se deforma. Por otro lado, si te fijas te pone un alto mínimo que eso también está bueno.
+
+6) Para que no te quede el espacio en blanco entre el lado izquierdo y el derecho, le podes poner al row la clase no-gutters.
+
+7) En mobile, fijate de decidir que preferis hacer, podes por ejemplo:
+- Invertir © que primero te aparezca el carousel más chico arriba y después abajo la parte del login. (Existen una clases en bootstrap 4 que te permiten ordenar las columnas order-1 por ejemplo para que aparezca primera, y podes ponerle los prefijos de los breakpoints en donde quieras que cambie el orden https://getbootstrap.com/docs/4.3/layout/grid/#order-classes) 
+- Ocultar el carousel y que solo se vea la parte del login
+
+Si optas por lo primero, tenes que tener en cuenta que en mobile el tema de que el alto de los elementos siempre sea el alto total de la pantalla, te va a estorbar, deberías poner un media query para que en pantallas de hasta 991px te muestre por ejemplo el carousel con un height de 400px y el login con height auto (o los tamaños que prefieras). Te escribo un ejemplo en código para que te des una idea:
+
+@media (max-width: 991px) { 
+    .login { 
+        height: auto; 
+    } 
+    .carousel .item { 
+        height: 400px; 
+    }
+  }
+
+8) Enlaces:
+- Acordate de ponerle hover a los botones y cambiar el color de los textos a blanco que va a tener mejor contraste.
+- Los links de Crear cuenta nueva y Olvidaste tu contraseña, no te olvide de ponerles un subrayado o italica para distinguirlo del título de bienvenido.
+
+Creo que con estos cambios vas a estar muy bien ya con esta pantalla! 
+
+Cualquier duda o consulta volvemos a hablar!
+
+Saludos
