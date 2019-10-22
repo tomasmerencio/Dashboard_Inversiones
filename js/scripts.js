@@ -65,8 +65,8 @@ var dataTenencias = {
         {
             data: [60, 40],
             backgroundColor: [
-                "#005EC9",
-                "#00C9A1"
+                "#F1962E",
+                "#99D976"
             ]
         }]
 };
@@ -87,9 +87,9 @@ var dataComposicion = {
         {
             data: [30, 50, 20],
             backgroundColor: [
-                "#005EC9",
-                "#00C9A1",
-                "#0097C9"
+                "#006671",
+                "#25AEA1",
+                "#84F9BE"
             ]
         }]
 };
@@ -105,7 +105,7 @@ var dataGanancias = {
   data: [0, 6, 14, 7, 2, 5, 12],
   lineTension: 0,
   fill: false,
-  borderColor: '#8bc34a'
+  borderColor: '#99D976'
 };
 
 var dataPerdidas = {
@@ -113,7 +113,7 @@ var dataPerdidas = {
   data: [0, 1, 5, 5, 8, 4, 7],
   lineTension: 0,
   fill: false,
-  borderColor: '#f44336'
+  borderColor: '#F1962E'
 };
 
 var dataGananciasPerdidas = {

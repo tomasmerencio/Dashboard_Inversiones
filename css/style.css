@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Domine|Poppins&display=swap');
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to bottom, #002633, #002a38, #002e3e, #003343, #003749);
+    background-image: linear-gradient(to right top, #001e28, #00212b, #00232f, #002632, #002936);
 }
 
 p {
@@ -29,7 +29,7 @@ h2, h3 {
     padding: 15px 10px;
     background: #003749;
     border: none;
-    border-radius: 0;
+    border-radius: 10px;
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -64,6 +64,19 @@ h2, h3 {
   border-radius: 10px;
 }
 
+.hvr-glow {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow;
+  transition-property: box-shadow;
+}
+.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
 .oportunidad{
   background-color: #003749;
   padding: 15px;
@@ -80,11 +93,11 @@ h2, h3 {
 }
 
 #porcentajeArriba{
-  color: #8bc34a;
+  color: #99D976;
 }
 
 #porcentajeAbajo{
-  color: #f44336;
+  color: #F1962E;
 }
 
 .tabla_operaciones table{
@@ -136,10 +149,10 @@ span {
 #sidebar {
     min-width: 200px;
     max-width: 200px;
-    background-image: radial-gradient(circle, #003749, #003343, #002e3e, #002a38, #002633);
+    background-image: linear-gradient(to top, #00141b, #031921, #031e28, #02242f, #002936);
     color: #C9C9C9;
     transition: all 0.3s;
-    border-right: 1px solid #f5f5f5 !important;
+    border-right: 1px solid #DEDEDE !important;
 }
 
 #sidebar.active {
@@ -264,7 +277,7 @@ ul.CTAs {
 ul.CTAs a {
     font-size: 0.9em !important;
     display: block;
-    border-top: 1px solid #f5f5f5;
+    border-top: 1px solid #DEDEDE;
 }
 
 a.download {
