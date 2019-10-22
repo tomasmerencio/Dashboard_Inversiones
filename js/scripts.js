@@ -65,8 +65,8 @@ var dataTenencias = {
         {
             data: [60, 40],
             backgroundColor: [
-                "#F1962E",
-                "#99D976"
+                "#006671",
+                "#25AEA1"
             ]
         }]
 };
