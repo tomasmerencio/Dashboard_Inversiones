@@ -1,3 +1,15 @@
+ $('.wrapper').toggleClass('toggled')
+
+ $(window).resize(function(e) {
+      if($(window).width()<=992){
+        $('#sidebar').toggleClass('active');
+        $('.wrapper').toggleClass('toggled');
+      }else{
+        $('#sidebar').removeClass('active');
+        $('.wrapper').removeClass('toggled');
+      }
+ });
+
 $(document).ready(function () {
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
